@@ -1,0 +1,33 @@
+p{
+    color: red;
+    font-size: 15px;
+
+}
+
+.PV{
+   color: blue;
+}
+
+body {
+    margin: 100px;
+}
+
+html {
+  font-family: "Courier New", Courier, monospace
+}
+
+.quote {
+  font-family: "Courier New", Courier, monospace
+}
+
+.DB{
+  color: green;
+}
+
+.italic-text {
+      font-style: italic;
+    }
+
+.center-text {
+    text-align: center;
+  }
