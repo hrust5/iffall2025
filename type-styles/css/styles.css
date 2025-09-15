@@ -1,0 +1,62 @@
+html {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15pt;
+}
+
+body{
+    margin: 100pt;
+}
+
+h1 {
+    color: black;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    text-indent: -1rem;
+}
+
+.description {
+  color: gray;
+  font-size: 10pt;
+  
+}
+
+.tight{
+    letter-spacing: .3em;
+}
+
+.spaced{
+    letter-spacing: 1.06em;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.lowercase{
+  text-transform: lowercase;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.line-through{
+  text-decoration: line-through;
+}
+
+.overline{
+  text-decoration: overline;
+}
