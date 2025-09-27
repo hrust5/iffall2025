@@ -1,0 +1,27 @@
+html{
+    margin: 50pt;
+}
+
+header{
+   max-width: 70ch; 
+  margin: 0 auto; 
+}
+
+.description{
+    font-size: 12pt;
+    font-style: italic;
+}
+
+body {
+  max-width: 70ch; 
+  margin: 0 auto; 
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.attribution{
+    line-height: .5;
+    color: gray;
+}
