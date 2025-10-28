@@ -1,0 +1,375 @@
+body {
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.button_container {
+    border: 1px solid #ddd;
+	margin: 0 10px 10px 0;
+	padding: 20px;
+	width: 300px;
+	height: 300px;
+	float: left;
+	overflow: hidden;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+
+
+a#btn_tesla {
+	display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 80px 80px;
+    transition: all 0.3s ease;
+     
+}
+
+a#btn_tesla img{
+   width: 80px;
+   height: auto;
+}
+
+a#btn_tesla:hover {
+	background-color: rgba(250, 22, 22, 0.8); 
+    color: white;
+    border-color: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(204, 0, 0, 0.3);
+}
+
+a#btn_amazon {
+	position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 28px;
+      color: #232f3e;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      background-color: white;
+      transition: color 0.3s ease, transform 0.3s ease;
+      margin:auto;
+    margin-top: 100px; 
+      border-radius: 100%;
+}
+
+
+a#btn_amazon img{
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+    margin:auto;
+    margin-top: 100px; 
+}
+
+a#btn_amazon img {
+    transform: scale(1.1);
+    margin:auto;
+    }
+
+a#btn_amazon:hover {
+	  color: white;
+      border-color: #ff9900;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 12px rgba(255, 153, 0, 0.4);
+}
+
+a#btn_samsung {
+	display: inline-block;
+	height: 40px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin: auto;
+	margin-top: 105px;
+	padding: 10px 30px 0 30px;
+	background-color: #1428A0; 
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Samsung Sharp Sans', 'Arial', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a#btn_samsung::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    transition: left 0.6s ease;
+    }
+
+a#btn_samsung:hover {
+    background: linear-gradient(135deg, #1b34cc 0%, #0f1e7a 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(20, 40, 160, 0.3);
+}
+
+a#btn_samsung:hover::before {
+    left: 125%;
+    transition: left 0.6s ease;
+}
+
+a#btn_newyorker {
+    display: inline-block;
+	position: relative;
+	margin:auto;
+	margin-top: 100px;
+	padding: 8px 16px;
+	background-color: #fff;
+	color: #000000;
+	font-family: 'The New Yorker', serif;
+	font-size: 30px;
+	text-decoration: none;
+	letter-spacing: -2px;
+	transition: all .2s;
+}
+
+a#btn_newyorker:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: #000000;
+	transition: all .5s;
+}
+
+a#btn_newyorker:hover {
+	color: #fff;
+}
+
+a#btn_newyorker:hover:before {
+    width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+a#btn_newyorker span {
+	position: relative;
+	z-index: 10;
+}
+
+a#btn_instagram {
+	display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 80px 80px;
+    transition: all 0.3s ease;
+     
+}
+
+a#btn_instagram img{
+   width: 80px;
+   height: auto;
+}
+
+a#btn_instagram:hover {
+    color: white;
+    border-color: #cc0000;
+    transform: translateY(-15px);
+}
+
+ a#btn_npr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  a#btn_npr img {
+    width: 200px;
+    padding-top: 80px;
+    height: auto;
+    position: absolute;
+    transition: opacity 0.4s ease;
+  }
+
+  a#btn_npr img.default {
+    opacity: 1;
+  }
+
+  a#btn_npr img.hover {
+    opacity: 0;
+  }
+
+  a#btn_npr:hover img.default {
+    opacity: 0;
+  }
+
+  a#btn_npr:hover img.hover {
+    opacity: 1;
+  }
+
+
+  a#btn_lyft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  a#btn_lyft img {
+    width: 200px;
+    padding-top: 80px;
+    height: auto;
+    position: absolute;
+    transition: opacity 0.4s ease;
+  }
+
+  a#btn_lyft img.default {
+    opacity: 1;
+  }
+
+  a#btn_lyft img.hover {
+    opacity: 0;
+  }
+
+  a#btn_lyft:hover img.default {
+    opacity: 0;
+  }
+
+  a#btn_lyft:hover img.hover {
+    opacity: 1;
+  }
+
+a#btn_coca-cola {
+	display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 100px 70px;
+    transition: all 0.3s ease;
+     
+}
+
+a#btn_coca-cola img{
+   width: 130px;
+   height: auto;
+}
+
+a#btn_coca-cola:hover {
+    color: white;
+    border-color: #cc0000;
+    transform: translateY(-15px);
+    opacity: .5;
+}
+
+a#btn_apple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  a#btn_apple img {
+    width: 200px;
+    padding-top: 80px;
+    height: auto;
+    position: absolute;
+    transition: opacity 0.4s ease;
+  }
+
+  a#btn_apple img.default {
+    opacity: 1;
+    width: 150px;
+  }
+
+  a#btn_apple img.hover {
+    opacity: 0;
+    width: 200px;
+  }
+
+  a#btn_apple:hover img.default {
+    opacity: 0;
+  }
+
+  a#btn_apple:hover img.hover {
+    opacity: 1;
+  }
+
+  a#btn_moo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  a#btn_moo img {
+    width: 200px;
+    padding-top: 80px;
+    height: auto;
+    position: absolute;
+    transition: opacity 0.4s ease;
+  }
+
+  a#btn_moo img.default {
+    opacity: 1;
+    width: 150px;
+  }
+
+  a#btn_moo img.hover {
+    opacity: 0;
+    width: 200px;
+  }
+
+  a#btn_moo:hover img.default {
+    opacity: 0;
+  }
+
+  a#btn_moo:hover img.hover {
+    opacity: 1;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+
+  a#btn_moo:hover {
+    animation: bounce 0.8s ease;
+  }
